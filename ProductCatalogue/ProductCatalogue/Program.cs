@@ -67,6 +67,7 @@ namespace ProductCatalogue // Note: actual namespace depends on the project name
                                 else
                                 {
                                     BagCatalogue.Add(name, Bag.CreateABag(name, price, colour));
+                                    Console.WriteLine($"You have added {name} to  the catalogue");
                                     Console.Write($"Note:Price Including Tax of {name} is - ");
                                     Console.WriteLine(Bag.CreateABag(name, price, colour).CalculateTax());
 
@@ -92,7 +93,10 @@ namespace ProductCatalogue // Note: actual namespace depends on the project name
                                     x = false;
                                 }
                                 else ShoeCatalogue.Add(name, Shoes.CreateAShoe(price, size, name));
-                                 filepath = Path.Combine(Directory.GetCurrentDirectory(), "ShoeCatalogue.json");
+                                Console.WriteLine($"You have added {name} to  the catalogue");
+                                Console.Write($"Note:Price Including Tax of {name} is - ");
+                                Console.WriteLine(Shoes.CreateAShoe(price, size, name).CalculateTax());
+                                filepath = Path.Combine(Directory.GetCurrentDirectory(), "ShoeCatalogue.json");
                                 File.WriteAllText(filepath, SaveCat.serialise(ShoeCatalogue));
                             }
 
@@ -179,6 +183,7 @@ namespace ProductCatalogue // Note: actual namespace depends on the project name
                 {
                     bagData = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "BagCatalogue.json"));
                     BagCatalogue = JsonSerializer.Deserialize<Catalogue<Bag>>(bagData);
+                    Console.WriteLine("Bag Catalogue:");
                     foreach (KeyValuePair<string, Bag> pair in BagCatalogue.Dict)
                     {
 
@@ -190,6 +195,7 @@ namespace ProductCatalogue // Note: actual namespace depends on the project name
                 {
                     ShoeData = File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "ShoeCatalogue.json"));
                     ShoeCatalogue = JsonSerializer.Deserialize<Catalogue<Shoes>>(ShoeData);
+                    Console.WriteLine("Shoe Catalogue:");
                     foreach (KeyValuePair<string, Shoes> pair in ShoeCatalogue.Dict)
                     {
                         Console.WriteLine($"Shoe Name:{pair.Key} - {pair.Value}");

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProductCatalogue
 {
-     internal class Shoes : Products
+     public class Shoes : Products
     {
         public float Size { get => _size; }
         public float _size;// give get and setter 
