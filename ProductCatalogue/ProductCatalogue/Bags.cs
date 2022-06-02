@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProductCatalogue
 {
-    internal class Bag : Products
+    public class Bag : Products
     {
         
         public string Colour {  get => _colour;}

@@ -19,15 +19,6 @@ namespace ProductCatalogue
 
         }   
         
-        //public double CalculateTotal()
-        //{
-        //    double Total = 0;
-        //    foreach (KeyValuePair kvp in _catalogue)
-        //    {
-        //        Total += kvp.CalculateTax();
-        //    }
 
-        //    return Total;
-        //}
     }
 }

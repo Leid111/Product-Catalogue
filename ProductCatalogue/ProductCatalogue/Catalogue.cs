@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProductCatalogue
 {
-    internal class Catalogue<T> where T : Products  // add a contraint where we bound type to produjct. ie we can only mage a cataolgue of products 
+    public class Catalogue<T> where T : Products  // add a contraint where we bound type to produjct. ie we can only mage a cataolgue of products 
     {
 
         public Dictionary<string,T> _catalogue = new Dictionary<string, T>();

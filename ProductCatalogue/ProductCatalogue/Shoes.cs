@@ -12,6 +12,7 @@ namespace ProductCatalogue
         public float _size;// give get and setter 
         public Shoes(double price, float size, string name)
         {
+            
             _price = price;
             _size = size; 
             _name = name;

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1180981\\Desktop\\Acc Tech Program\\Projects\\ProductCatalogue\\ProductCatalogue\\ProductCatalogue.csproj",
+      "projectUniqueName": "C:\\Users\\1180981\\Desktop\\Acc Tech Program\\Projects\\Product-Catalogue\\ProductCatalogue\\ProductCatalogue\\ProductCatalogue.csproj",
       "projectName": "ProductCatalogue",
-      "projectPath": "C:\\Users\\1180981\\Desktop\\Acc Tech Program\\Projects\\ProductCatalogue\\ProductCatalogue\\ProductCatalogue.csproj",
+      "projectPath": "C:\\Users\\1180981\\Desktop\\Acc Tech Program\\Projects\\Product-Catalogue\\ProductCatalogue\\ProductCatalogue\\ProductCatalogue.csproj",
       "packagesPath": "C:\\Users\\1180981\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1180981\\Desktop\\Acc Tech Program\\Projects\\ProductCatalogue\\ProductCatalogue\\obj\\",
+      "outputPath": "C:\\Users\\1180981\\Desktop\\Acc Tech Program\\Projects\\Product-Catalogue\\ProductCatalogue\\ProductCatalogue\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\1180981\\AppData\\Roaming\\NuGet\\NuGet.Config",
